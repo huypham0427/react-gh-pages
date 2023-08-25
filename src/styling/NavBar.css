@@ -1,0 +1,90 @@
+/* NavBar.css */
+.navbar-nav {
+  background-color: #f5f5f5;
+  border-top: 1px solid #e0e0e0;
+  padding: 1rem 0;
+}
+
+.navbar-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav li {
+  margin: 0 20px;
+  position: relative; /* For positioning the dropdown */
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-nav a:hover {
+  color: #ff9900;
+}
+
+/* Dropdown styling */
+.navbar-nav li:hover .dropdown-menu {
+  display: block;
+}
+
+/* NavBar.css */
+/* ... (existing styles) */
+
+/* Style the dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #adadad;
+  min-width: 160px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 4px; /* Add some border radius */
+  opacity: 0; /* Hide by default */
+  transform: translateY(-10px); /* Move it up slightly */
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Show the dropdown when the parent list item is hovered */
+.navbar-nav li:hover .dropdown-menu {
+  display: block;
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move it down */
+}
+
+/* Style the dropdown menu items */
+.dropdown-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align menu items */
+  gap: 5px; /* Add some space between items */
+}
+.dropdown-menu a {
+  color: #333333;
+  font-weight: bold;
+  padding: 10px; /* Adjust padding */
+  margin-left: -20px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s; /* Add a transition for background color */
+}
+
+.dropdown-menu a:hover {
+  background-color: #855a5a; /* Highlight on hover */
+}
+
+/* Add some space below the last dropdown item */
+.dropdown-menu li:last-child {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+

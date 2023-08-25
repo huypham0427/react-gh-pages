@@ -1,0 +1,6 @@
+.production-docs {
+    display: flex; /* Use flex layout */
+    align-items: flex-start; /* Align items at the top of the container */
+    justify-content: flex-start; /* Align items to the start of the container */
+    margin-top: 20px;
+  }

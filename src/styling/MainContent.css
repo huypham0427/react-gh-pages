@@ -1,0 +1,10 @@
+.main-content {
+    flex: 1; /* Expand to fill available space */
+    padding: 20px; /* Add some padding */
+    margin-left: 20px; /* Add margin to separate from side nav */
+    border-radius: 2%; /* Add border radius */
+    background-color: #f0f0f0; /* Example background color */
+  }
+  
+
+  

@@ -1,0 +1,32 @@
+.side-nav {
+    background-color:#adadad;
+    color: #fff;
+    width: 250px;
+    padding: 20px;
+    border-radius: 2%;
+  }
+  
+  .side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .side-nav li {
+    margin-bottom: 20px;
+  }
+  
+  .side-nav button {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+    border-radius: 5px;
+  }
+  
+  .side-nav button:hover {
+    color: #ff9900;
+  }
+  
+  

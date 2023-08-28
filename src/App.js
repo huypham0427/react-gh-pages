@@ -6,7 +6,7 @@ import ProjectUpdates from './components/ProjectUpdates';
 import DocumentStorage from './components/DocumentStorage';
 import NavBar from './components/NavBar';
 import HomePage from './components/HomePage';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import ProductionDocs from './components/ProductionDocs';
 import CompanyDocs from './components/CompanyDocs';
 import Forum from './components/Forum';
@@ -17,7 +17,7 @@ function App() {
       <div className="App">
         <Header />
         <NavBar />
-          <Switch>
+          <Routes>
             <Route path="/" exact component={HomePage} />
             <Route path="/news">
               <NewsFeed />
@@ -34,7 +34,7 @@ function App() {
             <Route path="/forum">
               <Forum />
             </Route>
-          </Switch>
+          </Routes>
       </div>
     </Router>
     
